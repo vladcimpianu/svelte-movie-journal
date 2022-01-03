@@ -1,8 +1,5 @@
 <script lang="ts">
   import type { Movie } from "./types";
-  import { createEventDispatcher } from "svelte";
-  import App from "./App.svelte";
-  const dispatch = createEventDispatcher();
 
   export let movies: Movie[];
 
@@ -12,13 +9,6 @@
     movies = updatedMovies;
   };
 </script>
-
-<svelte:head>
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/mono-icons@1.0.5/iconfont/icons.css"
-  />
-</svelte:head>
 
 {#each movies as movie (movie.title)}
   <div class="movie">

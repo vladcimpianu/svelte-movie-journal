@@ -35,7 +35,7 @@
   />
 
   <!-- svelte-ignore a11y-no-onchange -->
-  <select value={rating} on:change={onRatingSelect}>
+  <select value={rating} on:select={onRatingSelect}>
     <option value={1}>1</option>
     <option value={2}>2</option>
     <option value={3}>3</option>
