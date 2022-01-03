@@ -67,5 +67,6 @@
   .main button {
     width: 25%;
     height: 32px;
+    cursor: pointer;
   }
 </style>

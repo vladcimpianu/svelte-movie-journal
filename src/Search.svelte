@@ -29,7 +29,8 @@
     width: 100%;
     margin-bottom: 32px;
   }
-  div input {
+
+  input {
     width: 100%;
     margin-bottom: 16px;
   }

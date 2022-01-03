@@ -12,7 +12,6 @@
     const updatedMovies = [...movies, movie];
     localStorage.setItem("movies", JSON.stringify(updatedMovies));
     movies = updatedMovies;
-    console.log(movies);
   };
 
   const clearSearch = () => {
@@ -36,10 +35,10 @@
   <h1>Welcome to your movie journal!</h1>
 
   <Search
-    on:search={(event) => handleSearch(event.detail.searchTerm)}
+    on:search={(ev) => handleSearch(ev.detail.searchTerm)}
     on:clearSearch={clearSearch}
   />
-  <MovieInput on:submitMovie={(e) => submitMovie(e.detail.movie)} />
+  <MovieInput on:submitMovie={(ev) => submitMovie(ev.detail.movie)} />
   <MovieList {movies} />
 </div>
 
